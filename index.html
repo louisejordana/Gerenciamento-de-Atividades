@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8" />
+    <title>Gerenciamento de Atividades</title>
+  </head>
+  <body>
+    
+    <header>
+      <h1>Adicionar Tarefas</h1>
+    </header>
+    <form>
+      <input type="text" class="tarefas-input">
+      <input type="time" class="tarefas-horario">
+      <button class="tarefas-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="tarefas" class="filtro">
+          <option value ="a-fazer">Tarefas a fazer</option>
+          <option value="completo-bt">Tarefas feitas</option>
+          <option value="canceladas">Tarefas canceladas</option>
+        </select>
+      </div>
+    </form>
+    <div class="tarefas-campo">
+      <ul class="lista-tarefas"></ul>
+    </div>
+
+    
+    <script src="sketch.js"></script>
+    
+  </body>
+</html>
